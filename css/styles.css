@@ -1,39 +1,92 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff5f8;
+    background-color: #fff0f5;
     color: #333;
 }
-nav {
-    background-color: #ff85a2;
-    padding: 1em;
+
+/* Header */
+header {
+    background-color: #ffb6c1;
+    padding: 10px 0;
     text-align: center;
 }
-nav a {
-    margin: 0 1em;
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-weight: bold;
 }
-nav a:hover {
-    text-decoration: underline;
+
+/* Layout */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
 }
-header {
-    text-align: center;
-    padding: 2em;
-    background-color: #ffc2d1;
+
+/* Profile Image */
+.profile-pic {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
-header h1 {
-    color: #ff4d6d;
-}
-header p {
-    font-size: 1.2em;
-    color: #333;
-}
-main {
-    padding: 2em;
-}
+
+/* Sections */
 section {
-    margin-bottom: 2em;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+/* Resume Button */
+.btn {
+    display: inline-block;
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #ffb6c1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-pic {
+        margin: 0 auto 20px;
+    }
 }
