@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Various Art Pieces – Frank Fan</title>
+
+  <meta name="author" content="Frank Fan">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+  <!-- Page-specific styles for the grid -->
+  <style>
+    .art-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    .art-item {
+      flex: 1 1 calc(33.333% - 16px);
+      max-width: calc(33.333% - 16px);
+    }
+
+    .art-item img {
+      width: 100%;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .art-item-title {
+      margin-top: 6px;
+      font-size: 0.9em;
+      text-align: center;
+      color: #555;
+    }
+
+    /* 2 per row on medium screens */
+    @media (max-width: 800px) {
+      .art-item {
+        flex: 1 1 calc(50% - 16px);
+        max-width: calc(50% - 16px);
+      }
+    }
+
+    /* 1 per row on small screens */
+    @media (max-width: 500px) {
+      .art-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;
+                 border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <!-- Page title -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;
+                         margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:100%;vertical-align:middle">
+                  <p class="name" style="text-align:center;">
+                    Various Art Pieces
+                  </p>
+                  <p style="text-align:center;">
+                    A selection of personal artworks.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Art grid container -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;
+                         margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+                  <div class="art-grid">
+
+                    <!-- ART PIECE 1 -->
+                    <div class="art-item">
+                      <a href="images/art1_full.jpg" target="_blank">
+                        <img src="images/art1_thumb.jpg" alt="Art piece 1">
+                      </a>
+                      <!-- Optional caption; remove if you truly want just photos -->
+                      <div class="art-item-title">Art Piece Title 1</div>
+                    </div>
+
+                    <!-- ART PIECE 2 -->
+                    <div class="art-item">
+                      <a href="images/art2_full.jpg" target="_blank">
+                        <img src="images/art2_thumb.jpg" alt="Art piece 2">
+                      </a>
+                      <div class="art-item-title">Art Piece Title 2</div>
+                    </div>
+
+                    <!-- ART PIECE 3 -->
+                    <div class="art-item">
+                      <a href="images/art3_full.jpg" target="_blank">
+                        <img src="images/art3_thumb.jpg" alt="Art piece 3">
+                      </a>
+                      <div class="art-item-title">Art Piece Title 3</div>
+                    </div>
+
+                    <!-- Duplicate the block below for more pieces -->
+                    <!--
+                    <div class="art-item">
+                      <a href="images/art4_full.jpg" target="_blank">
+                        <img src="images/art4_thumb.jpg" alt="Art piece 4">
+                      </a>
+                      <div class="art-item-title">Art Piece Title 4</div>
+                    </div>
+                    -->
+
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
